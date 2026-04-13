@@ -106,6 +106,7 @@ export const questionsData: QuestionType[] = [
       { text: "杀穿全场，人头最重要！", effect: { A: 1, I: 1 } },
       { text: "苟到吃鸡，吃鸡才是王道！", effect: { T: 1, F: 1 } }
     ]
+<<<<<<< HEAD
   },
   {
     id: 13,
@@ -114,5 +115,7 @@ export const questionsData: QuestionType[] = [
       { text: "落地钢枪，不服就干！", effect: { A: 1, I: 1, Q: 1 } },
       { text: "跳野区发育，稳扎稳打才是王道", effect: { T: 1, F: 1 } }
     ]
+=======
+>>>>>>> 9c1d501aa433e9acdb4b855566703dc271a55e18
   }
 ];

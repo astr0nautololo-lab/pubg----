@@ -5,7 +5,10 @@ export interface ResultType {
   description: string;
   weapon: string;
   drop: string;
+<<<<<<< HEAD
   image?: string; // 添加图片路径字段
+=======
+>>>>>>> 9c1d501aa433e9acdb4b855566703dc271a55e18
 }
 
 export const resultsData: Record<string, ResultType> = {
@@ -15,8 +18,12 @@ export const resultsData: Record<string, ResultType> = {
     title: '千里之外，一枪毙命',
     description: '你是一个自信且致命的独狼。喜欢孤军奋战，主动寻找猎物，在远距离给敌人带来压迫感。你不需要队友的保护，你的枪法就是最好的防守。',
     weapon: 'AWM / Kar98k + 高倍镜',
+<<<<<<< HEAD
     drop: '高资源打野点 (如研究所、防空洞)',
     image: '/photos/独狼狙神.png' // 假设图片格式为 png，如果是 jpg 请自行修改。另外请确保 photos 文件夹位于项目的 public 目录中
+=======
+    drop: '高资源打野点 (如研究所、防空洞)'
+>>>>>>> 9c1d501aa433e9acdb4b855566703dc271a55e18
   },
   ASLF: {
     id: 'ASLF',
