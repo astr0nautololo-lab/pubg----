@@ -57,7 +57,7 @@ function App() {
   const downloadResult = async () => {
     if (resultRef.current) {
       try {
-        const canvas = await html2canvas(resultRef.current, { backgroundColor: '#1a1a1a' });
+        const canvas = await html2canvas(resultRef.current, { backgroundColor: '#1a1a1a', useCORS: true });
         const image = canvas.toDataURL('image/png');
         const link = document.createElement('a');
         link.href = image;
@@ -162,6 +162,18 @@ function App() {
                   <p className="text-xl text-gray-300 italic mb-8 border-l-4 border-[var(--color-pubg-yellow)] pl-4">
                     "{resultsData[resultId]?.title}"
                   </p>
+
+                {/* 如果在 resultsData 中添加了 image 属性，在此处渲染图片 */}
+                {resultsData[resultId]?.image && (
+                  <div className="mb-8 flex justify-center">
+                    <img 
+                      src={resultsData[resultId].image} 
+                      alt={resultsData[resultId]?.name} 
+                      className="w-full max-w-[200px] rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] border border-gray-600 object-cover"
+                      crossOrigin="anonymous"
+                    />
+                  </div>
+                )}
 
                   <div className="space-y-6">
                     <div>
